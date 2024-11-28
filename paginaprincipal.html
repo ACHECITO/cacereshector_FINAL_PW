@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="paginaprincipal.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="paginaprincipal.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a la Página Principal</h1>
+
+        <p>¡Hola! Bienvenido a nuestra página. Para comenzar, por favor ingresa tu nombre.</p>
+
+        <!-- Formulario para ingresar el nombre -->
+        <div class="input-container">
+            <input type="text" id="nameInput" placeholder="Ingresa tu nombre" required>
+            <button onclick="greetUser()">Saludarme</button>
+        </div>
+
+        <div id="greetingMessage"></div>
+
+        <p>Esta página contiene los siguientes enlaces:</p>
+        <ul>
+            <li><button onclick="location.href='pagina1.html'">Ir a Página API</button></li>
+            <li><button onclick="location.href='pagina2.html'">Ir a Página Formulario</button></li>
+            <li><button onclick="location.href='pagina3.html'">Ir a Página de Operaciones</button></li>
+            <li><button onclick="location.href='pagina4.html'">Ir a Página Inicio</button></li>
+        </ul>
+
+        <p id="pageDescription"></p>
+    </div>
+</body>
+</html>

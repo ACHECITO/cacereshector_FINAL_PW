@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Empleados</title>
+    <link rel="stylesheet" href="paginaformulario.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="paginaformulario.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulario de Empleados</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pagina1.html">Página 1</a></li>
+                    <li><a href="pagina2.html">Página 2</a></li>
+                    <li><a href="pagina3.html">Página 3</a></li>
+                    <li><a href="pagina4.html">Página 4</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form id="employeeForm">
+            <!-- Campo para nombre y apellido -->
+            <label for="employeeName">Nombre y Apellido:</label>
+            <input type="text" id="employeeName" name="employeeName" placeholder="Ej. Juan Pérez" required>
+
+            <!-- Campo para calificación -->
+            <label for="calification">Calificación:</label>
+            <input type="number" id="calification" name="calification" min="1" max="10" step="1" required>
+
+            <!-- Campo para observación larga -->
+            <label for="observation">Observación:</label>
+            <textarea id="observation" name="observation" rows="6" placeholder="Escribe observaciones detalladas aquí..." required></textarea>
+
+            <!-- Botones -->
+            <button type="button" id="sendButton">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+
+        <!-- Navegación -->
+        <div class="navigation-buttons">
+            <button id="reloadButton">Inicio</button>
+            <button id="nextPageButton">Ir a siguiente página</button>
+        </div>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="paginaapi.html">Página 1</a></li>
+                    <li><a href="paginaprincipal.html">Página 2</a></li>
+                    <li><a href="paginaformulario.html">Página 3</a></li>
+                    <li><a href="paginadeoperaciones.html">Página 4</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacción con APIs</title>
+    <link rel="stylesheet" href="paginaapi.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interacción con APIs</h1>
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">INICIO</a></li>
+                    <li><a href="paginaprincipal.html">PAGINA PRINCIPAL</a></li>
+                    <li><a href="paginaformulario.html">FORMULARIO</a></li>
+                    <li><a href="paginadeoperaciones.html">PAGINA DE OPERACIONES</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- API 1: Enviar un correo -->
+        <section class="api-section">
+            <h2>Enviar un Correo</h2>
+            <form id="emailForm">
+                <input type="email" id="emailTo" placeholder="Correo destinatario" required>
+                <textarea id="emailMessage" placeholder="Escribe tu mensaje aquí" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="emailStatus"></p>
+        </section>
+
+        <!-- API 2: Ver imágenes -->
+        <section class="api-section">
+            <h2>Buscar Imágenes</h2>
+            <input type="text" id="imageSearch" placeholder="Buscar imágenes (ej. nature)" required>
+            <button id="searchImages">Buscar</button>
+            <div id="imageResults" class="image-grid"></div>
+        </section>
+
+        <!-- API 3: Conversión de moneda -->
+        <section class="api-section">
+            <h2>Conversión de Moneda</h2>
+            <input type="number" id="amount" placeholder="Monto" required>
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="ARS">ARS</option>
+            </select>
+            <select id="toCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="ARS">ARS</option>
+            </select>
+            <button id="convertCurrency">Convertir</button>
+            <p id="conversionResult"></p>
+        </section>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">INICIO</a></li>
+                    <li><a href="paginaprincipal.html">PAGINA PRINCIPAL</a></li>
+                    <li><a href="paginaformulario.html">FORMULARIO</a></li>
+                    <li><a href="paginadeoperaciones.html">PAGINA DE OPERACIONES</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="paginaapi.js"></script>
+</body>
+</html>

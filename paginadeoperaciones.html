@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLA DE OPERACIONES</title>
+    <link rel="stylesheet" href="paginadeoperaciones.css">
+    <script src="paginadeoperaciones.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tabla de Operaciones</h1>
+        <table id="operationsTable">
+            <thead>
+                <tr>
+                    <th class="animated">Operación</th>
+                    <th class="animated">Descripción</th>
+                    <th class="animated">Datos</th>
+                    <th class="animated">Botones</th>
+                    <th class="animated">Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Total producto</td>
+                    <td>Calcula el precio por la cantidad</td>
+                    <td>
+                        <input type="number" id="price1" placeholder="Precio" step="0.01">
+                        <input type="number" id="quantity1" placeholder="Cantidad">
+                    </td>
+                    <td><button class="calcButton" data-operation="total">Calcular</button></td>
+                    <td id="result1"></td>
+                </tr>
+                <tr>
+                    <td>Porcentaje</td>
+                    <td>Calcular el 30% del precio</td>
+                    <td>
+                        <input type="number" id="price2" placeholder="Precio" step="0.01">
+                    </td>
+                    <td><button class="calcButton" data-operation="percentage">Calcular</button></td>
+                    <td id="result2"></td>
+                </tr>
+                <tr>
+                    <td>Descuento</td>
+                    <td>Calcular el 25% de descuento de un precio por la cantidad</td>
+                    <td>
+                        <input type="number" id="price3" placeholder="Precio" step="0.01">
+                        <input type="number" id="quantity3" placeholder="Cantidad">
+                    </td>
+                    <td><button class="calcButton" data-operation="discount">Calcular</button></td>
+                    <td id="result3"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="navigation-buttons">
+            <button id="reloadPage">Volver a esta página</button>
+            <button id="goHome">Volver al Inicio</button>
+        </div>
+    </div>
+</body>
+
+</html>
